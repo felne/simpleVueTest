@@ -39,7 +39,7 @@ export default {
     },
     addTime: function(param){
       if(param > -1){
-        this.$store.commit('setTime',+this.$store.getters.getTempTime+5)
+        this.$store.commit('setTime',+this.$store.getters.getTime+5)
       }else{
         this.$store.commit('setTime', +this.$store.getters.getTime-5)
       }
