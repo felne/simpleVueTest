@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+.small{
+  font-size: .875em;
+  font-family: Helvetica, sans-serif;
+}
+
+.medium{
+  font-size: 1em;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.large{
+  font-size: 3.5em;
+  font-family: 'Neucha',Helvetica, sans-serif;
+}
+h1.large{
+  color: #FF413B;
+  font-style: italic;
+}
+
+.btn{
+  background: #FF413B;
+  width: 120px;
+  padding: 7px 0 7px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.center{
+  text-align: center;
+}
+
+@media (max-width: 426px){
+  .large{
+    font-size: 2em;
+  } 
+}
