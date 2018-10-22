@@ -8,7 +8,7 @@
         </div> <!-- Termina caixa principal -->
         <div class="grid-4 box-secondary">
             <!-- Caixa secundaria - valor -->
-            <h1 class="large center">Valor</h1>
+            <h1 class="large center">Resumo</h1>
             <box-value-vue />
         </div> <!-- Termina caixa secundaria -->
     </div>
@@ -34,7 +34,7 @@
         position: relative;
         margin-top: 100px;
         min-height: 450px;
-        background: #FDF6EE;
+        background: #FFF;
         border-radius: 10px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -43,7 +43,7 @@
         position: relative;
         margin-top: 100px;
         min-height: 450px;
-        background: #FDF6EE;
+        background: #FFF;
         border-radius: 10px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     }

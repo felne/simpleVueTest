@@ -24,7 +24,7 @@ export default {
 .btn-group{
   justify-content: flex-end;
 }
-@media (max-width: 426px){
+@media (max-width: 739px){
   .box-itens{
     flex-wrap: wrap;
     margin-bottom: -80px;

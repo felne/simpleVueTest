@@ -14,7 +14,7 @@
             <span>Sabor : </span><span>{{$store.getters.getType || 'Escolha o sabor'}}</span>
         </p>
         <span class="separator"></span>
-        <p class="medium total">
+        <p class="grid-12 medium total">
             <span>Total</span><span>{{some(+$store.getters.getValue,+$store.getters.getAddValue)}}</span>
         </p>
     </div>
@@ -55,7 +55,7 @@
         display: block;
         position: absolute;
         bottom: 60px;
-        margin: 10px 0px;
+        margin-left: -10px;
         width: 300px;
         max-width: 100%;
     }
@@ -65,5 +65,9 @@
         position: absolute;
         bottom: 0;
     }
-
+    @media (max-width: 730px) {
+        .separator{
+            margin-left: 0px;
+        }
+    }
 </style>

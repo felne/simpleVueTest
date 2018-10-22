@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Neucha');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 .small{
   font-size: .875em;
   font-family: Helvetica, sans-serif;
@@ -12,15 +12,15 @@
 
 .large{
   font-size: 3.5em;
-  font-family: 'Neucha',Helvetica, sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
+
 h1.large{
   color: #FF413B;
-  font-style: italic;
 }
 
 .btn{
-  background: #FF413B;
+  background: #6F9983;
   width: 120px;
   padding: 7px 0 7px 0;
   border-radius: 10px;

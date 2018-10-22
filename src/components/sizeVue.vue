@@ -100,7 +100,7 @@
         font-size: 1em;
     }
 
-    @media (max-width: 426px) {
+    @media (max-width: 739px) {
 
         .pizza-big,
         .pizza-medium,

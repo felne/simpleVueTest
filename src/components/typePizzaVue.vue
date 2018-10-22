@@ -30,7 +30,7 @@
         justify-content: space-between;
     }
 
-    @media (max-width: 426px) {
+    @media (max-width: 739px) {
         .box-itens {
             flex-wrap: wrap;
             margin-bottom: -80px;
