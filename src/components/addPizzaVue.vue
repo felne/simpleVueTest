@@ -43,7 +43,7 @@
     @media (max-width: 739px) {
         .box-itens {
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-top: 40px;
         }
     }
 

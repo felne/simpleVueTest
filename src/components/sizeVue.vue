@@ -3,19 +3,19 @@
         <div class="grid-4">
             <input type="radio" name="size" id="small" value="Pequena" v-model="size">
             <label for="small"><img src='../assets/pizza.png' alt="imagem pizza" class="pizza-small">
-                <p class="small">Pequena</p>
+                <p class="medium">Pequena</p>
             </label>
         </div>
         <div class="grid-4">
             <input type="radio" name="size" id="medium" value="Media" v-model="size">
             <label for="medium"><img src='../assets/pizza.png' alt="imagem pizza" class="pizza-medium">
-                <p class="small">Media</p>
+                <p class="medium">Media</p>
             </label>
         </div>
         <div class="grid-4">
             <input type="radio" name="size" id="big" value="Grande" v-model="size">
             <label for="big"><img src='../assets/pizza.png' alt="imagem pizza" class="pizza-big">
-                <p class="small">Grande</p>
+                <p class="medium">Grande</p>
             </label>
         </div>
     </span>
@@ -66,7 +66,7 @@
         justify-content: space-between;
         text-align: center;
         align-items: flex-end;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .pizza-small {
@@ -92,20 +92,20 @@
     input[type=radio] {
         display: none;
     }
-
-    p.small {
+    .medium{
         margin-top: 10px;
-        font-family: 'Neucha';
-        font-weight: 900;
-        font-size: 1em;
     }
 
     @media (max-width: 739px) {
 
-        .pizza-big,
-        .pizza-medium,
-        .pizza-small {
+        .pizza-big{
+            width: 90px;
+        }
+        .pizza-medium{
             width: 70px;
+        }
+        .pizza-small {
+            width: 50px;
         }
 
         p {

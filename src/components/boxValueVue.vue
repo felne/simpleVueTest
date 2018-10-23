@@ -14,8 +14,8 @@
             <span>Sabor : </span><span>{{$store.getters.getType || 'Escolha o sabor'}}</span>
         </p>
         <span class="separator"></span>
-        <p class="grid-12 medium total">
-            <span>Total</span><span>{{some(+$store.getters.getValue,+$store.getters.getAddValue)}}</span>
+        <p class="medium total grid-10">
+            <span>Total </span><span>R$ {{parseInt($store.getters.getValue)+parseInt($store.getters.getAddValue)}},00</span>
         </p>
     </div>
 </template>
@@ -23,11 +23,6 @@
 <script>
     export default {
         name: "boxValueVue",
-        methods: {
-            some: function(param1, param2) {
-                return "R$ " + (param1 + param2) + ",00";
-            }
-        }
     };
 
 </script>
@@ -37,11 +32,10 @@
         margin: 10px 30px;
         display: flex;
         justify-content: space-between;
-        max-width: 240px;
     }
 
     .time {
-        margin: 120px 40px 0px 40px;
+        bottom: 120px;
         display: block;
         position: absolute;
     }
@@ -57,14 +51,18 @@
     }
 
     .total {
-        margin: 30px;
+        margin: 20px;
         position: absolute;
         bottom: 0;
+        max-width: 100%;
     }
 
     @media (max-width: 739px) {
         .separator{
             margin-left: 0px;
+        }
+        .total{
+            width: 250px;
         }
     }
 </style>

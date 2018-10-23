@@ -50,5 +50,13 @@
         position: absolute;
         bottom: 0px;
     }
+    @media (max-width: 739px) {
+        .box-secondary, .box{
+            margin-top: 20px;
+        }
+        .large{
+            font-size: 2em;
+        }
+    }
 
 </style>

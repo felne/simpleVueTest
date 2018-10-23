@@ -26,8 +26,6 @@ export default {
 @media (max-width: 739px){
   .box-itens{
     flex-wrap: wrap;
-    margin-bottom: -80px;
-    margin-top: 20px;
   }
 }
 </style>
