@@ -32,17 +32,21 @@
             }
         },
         created() {
-            this.add = this.$store.getters.getAdd.map(function(param) { /* Criar uma nova array com os adicionais para informar ao usuario */
-                if (param == '5') {
-                    return ' Mais Borda'
-                } else if (param == '3') {
-                    return ' Mais Bacon'
-                } else if (param == '0') {
-                    return ' Sem Cebola'
-                } else {
-                    return false;
-                }
-            })
+            if(this.$store.getters.getAdd.length > 0){
+                this.add = this.$store.getters.getAdd.map(function(param) { /* Criar uma nova array com os adicionais para informar ao usuario */
+                    if (param == '5') {
+                        return ' Mais Borda'
+                    } else if (param == '3') {
+                        return ' Mais Bacon'
+                    } else if (param == '0') {
+                        return ' Sem Cebola'
+                    } else {
+                        return false;
+                    }
+                })
+            }else{
+                return this.add = 'Sem adicional'
+            }
         }
     }
 

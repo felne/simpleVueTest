@@ -4,21 +4,21 @@
             <input type="radio" id="calabresa" name="typeFlavor" value="Calabresa" v-model="type">
             <label for="calabresa">
                 <p class="large"><span>1</span> - Calabresa</p>
-                <p class="small">Mussarela, Molho ao sugo e Calabresa</p>
+                <p class="small">Mussarela, Molho, Cebola e Calabresa</p>
             </label>
         </div>
         <div class="grid-12 flavor">
             <input type="radio" id="marguerita" name="typeFlavor" value="Marguerita" v-model="type">
             <label for="marguerita">
                 <p class="large"><span>2</span> - Marguerita</p>
-                <p class="small">Mussarela, Molho ao sugo, tomate e manjericão</p>
+                <p class="small">Mussarela, Molho, Cebola, tomate e manjericão</p>
             </label>
         </div>
         <div class="grid-12 flavor">
             <input type="radio" id="portuguesa" name="typeFlavor" value="Portuguesa" v-model="type" @change="hasType(type)">
             <label for="portuguesa">
                 <p class="large"><span>3</span> - Portuguesa</p>
-                <p class="small">Mussarela, Molho ao sugo e Calabresa</p>
+                <p class="small">Mussarela, Molho, Cebola, Pimentão e Ovo</p>
             </label>
         </div>
     </span>
