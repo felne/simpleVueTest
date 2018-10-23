@@ -30,7 +30,7 @@
             }
         },
         methods: {
-            hasValue: function(param) {
+            hasValue: function(param) { /*Verificar qual tamanho da pizza, poderia ser substituido por um object*/
                 switch (param) {
                     case 'Grande':
                         this.$store.commit('setValue', 40);

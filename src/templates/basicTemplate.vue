@@ -1,4 +1,4 @@
-<template>
+<template> <!-- Template base para todas as paginas -->
     <div class="container">
         <div class="grid-8 box">
             <!-- Caixa principal - pedido -->
@@ -21,10 +21,7 @@
         components: {
             boxValueVue
         },
-        props: ['sub'],
-        data() {
-            return {}
-        }
+        props: ['sub']
     }
 
 </script>

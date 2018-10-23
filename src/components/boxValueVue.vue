@@ -23,10 +23,6 @@
 <script>
     export default {
         name: "boxValueVue",
-        props: ["valueAd"],
-        data() {
-            return {};
-        },
         methods: {
             some: function(param1, param2) {
                 return "R$ " + (param1 + param2) + ",00";
@@ -65,7 +61,8 @@
         position: absolute;
         bottom: 0;
     }
-    @media (max-width: 730px) {
+
+    @media (max-width: 739px) {
         .separator{
             margin-left: 0px;
         }

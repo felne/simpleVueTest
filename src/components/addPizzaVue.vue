@@ -28,7 +28,6 @@
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .box-itens {
         text-align: center;
@@ -41,11 +40,10 @@
         justify-content: space-between;
     }
 
-    @media (max-width: 426px) {
+    @media (max-width: 739px) {
         .box-itens {
             flex-wrap: wrap;
-            margin-bottom: -80px;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 

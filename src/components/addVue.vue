@@ -30,14 +30,14 @@ export default {
     }
   },
   methods:{
-    hasAdd: function(param){
+    hasAdd: function(param){ /*Função para reduzir os valores da array (calcular)*/
       if(param.length > 0){
         this.$store.commit('setAddValue',this.addValue.reduce(function(a,b){return parseInt(a)+parseInt(b)}));
       }else{
         this.$store.commit('setAddValue','0')
       }
     },
-    addTime: function(param){
+    addTime: function(param){ /* Função para verificar se borda foi selecionada e adicionar mais 5 min */
       if(param > -1){
         this.$store.commit('setTime',+this.$store.getters.getTime+5)
       }else{
@@ -73,7 +73,7 @@ div  span{
   border-top-right-radius: 1em;
   font-weight: bolder;
 }
-@media (max-width: 426px){
+@media (max-width: 739px){
   .additional{
     margin-bottom: 10px;
   }

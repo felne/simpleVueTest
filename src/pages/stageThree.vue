@@ -17,10 +17,7 @@
             addPizzaVue,
             addVue
         },
-        data() {
-            return {}
-        },
-        created() {
+        created() { /* Verifica se vuex Size possui valor, caso contrario força retorno para pagina anterior */
             if (!this.$store.getters.getSize) {
                 window.location.href = "/"
             }

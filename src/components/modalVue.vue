@@ -19,7 +19,7 @@
 </template>
 <script>
     export default {
-        name: 'modaVue',
+        name: 'modalVue',
         data() {
             return {
                 add: [],
@@ -32,7 +32,7 @@
             }
         },
         created() {
-            this.add = this.$store.getters.getAdd.map(function(param) {
+            this.add = this.$store.getters.getAdd.map(function(param) { /* Criar uma nova array com os adicionais para informar ao usuario */
                 if (param == '5') {
                     return ' Mais Borda'
                 } else if (param == '3') {
@@ -49,10 +49,7 @@
 </script>
 <style scoped>
     .fade-enter,
-    .fade-leave-to
-
-    /* .fade-leave-active em versões anteriores a 2.1.8 */
-        {
+    .fade-leave-to{
         opacity: 0;
     }
 

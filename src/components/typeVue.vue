@@ -28,12 +28,12 @@
         name: 'typeVue',
         data() {
             return {
-                type: []
+                type: ''
             }
         },
         methods: {
-            hasType: function(param) {
-                if (param == 'Portuguesa') {
+            hasType: function(param) {/* function para crementar o tempo caso o sabor portuguesa seja selecionado */
+                if (param == 'Portuguesa') { 
                     this.$store.commit('setTime', +this.$store.getters.getTempTime + 5)
                 } else {
                     if (this.$store.getters.getTempTime == this.$store.getters.getTime) {
@@ -44,7 +44,7 @@
                 }
             }
         },
-        created() {
+        created() { /*Verifica vuex TempTime possui valor maior que zero recebe ele mesmo, se não o valor de time para controlar os avanço e proximo e assim não perder o valor do tempo de preparo*/
             if (this.$store.getters.getTempTime > 0) {
                 this.$store.commit('setTime', this.$store.getters.getTempTime)
             } else {

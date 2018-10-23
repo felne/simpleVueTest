@@ -17,7 +17,7 @@
             sizePizzaVue,
             sizeVue
         },
-        created() {
+        created() { /* resetar os valores das vuex caso volte para a pagina*/
             this.$store.commit('setType', null),
                 this.$store.commit('setSize', ''),
                 this.$store.commit('setTime', 0),

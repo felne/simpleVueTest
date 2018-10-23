@@ -21,7 +21,7 @@
             return {}
         },
         created() {
-            if (!this.$store.getters.getSize) {
+            if (!this.$store.getters.getSize) { /*força o usuario retornar a pagina anterior caso vuex size não possua valor */
                 window.location.href = "/"
             }
             this.$store.commit('setAddValue', '0')

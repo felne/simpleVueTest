@@ -18,6 +18,6 @@
 
 <style>
   body{
-    background-image: url(assets/fundo.png), linear-gradient(120deg,#FE7566,#FF413B);
+    background-image: url(assets/fundo.png), linear-gradient(120deg,#FE9488,#FE7566);
   }
 </style>
