@@ -26,6 +26,7 @@
             }
             this.$store.commit('setAddValue', '0')
             this.$store.commit('setType', '')
+            this.$store.commit('setAdd','')
         }
     }
 </script>
